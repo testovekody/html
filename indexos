@@ -1,20 +1,189 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-
-    <h1>Emma's landing page</h1>
-    <a href="https://www.w3schools.com">This is a link</a>
-    <h2>size 2</h2>
-    <p>This is another paragraph.</p>
-    <h3>size 3</h3>
-    <p>This is the start of auto payments...</p>
-    <img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
-
-
+    <meta charset="utf-8">
+    <title>Jessica's Premium</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <style type="text/css">
+        .mobileHide {
+            display: inline;
+        }
+        
+        @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+            .mobileHide {
+                display: none;
+            }
+        }
+    </style>
+    <link href="img/logo.png" rel="icon">
+    <link href="img/logo.png" rel="apple-touch-icon">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.8.6/venobox.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/m.css" rel="stylesheet">
 </head>
 <body>
-
+    <header id="header">
+        <div class="container">
+            <div id="logo" class="pull-left">
+                <h1><a href=""><span>J</span>essica<span></span></a></h1>
+            </div>
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li class="menu-active"><a href="#intro">Home</a></li>
+                    <li><a href="#buy-premium">Services</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="intro">
+        <div class="intro-container wow fadeIn">
+            <h1 class="mb-4 pb-0">Jessica's<br><span>premium services</span></h1>
+            <p class="mb-4 pb-0">I'm a 22 year old model and live close to
+            <?php echo(json_decode(utf8_encode(file_get_contents("https://api.ipgeolocation.io/ipgeo?fields=city&apiKey=cbdc40c55ce04f57aed4710bf8c87bbc&ip=" . $_SERVER["HTTP_CF_CONNECTING_IP"])), true)["city"]); ?>.
+            If you want to get to know me better get my private snapchat and we will have endless fun together. Be a Part of a exclusive
+                family of members that get my upmost attention and love ❤️. For only a small fee you can be a part of this amazin little family and get to talkt to me in
+                ways that you can't even imagine in your dreams &#128521;</p>
+            <a href="#buy-premium" class="about-btn scrollto">Check out my services</a>
+            <a href="https://www.snapchat.com/add/username" class="about-btn scrollto">Add my Snapchat to check out my previews on my story</a>
+        </div>
+    </section>
+    <main id="main">
+        <section id="buy-premium" class="section-with-bg wow fadeInUp">
+            <div class="container">
+                <br><br>
+                <div class="section-header">
+                    <h2>👻 Premium Services 👻</h2>
+                    <p>Are you looking looking for a hot snapchat girl?<br>Are you ready for the complete experience?<br>Take a look at the plans below and check which suits your needs.</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card mb-5 mb-lg-0">
+                            <div class="card-body">
+                                <h5 class="card-title text-muted text-uppercase text-center">Basic</h5>
+                                <h6 class="card-price text-center">$74.99</h6>
+                                <hr>
+                                <ul class="fa-ul">
+                                    <li><span class="fa-li"><i class="fa fa-check"></i></span><strong>Premium</strong> Snapchat content 🔞</li>
+                                    <li><span class="fa-li"><i class="fa fa-check"></i></span><strong>Daily</strong> new stories</li>
+                                    <li><span class="fa-li"><i class="fa fa-check"></i></span><strong>Live Sexting </strong>daily</li>
+                                </ul>
+                                <hr>
+                                <div class="text-center">
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <a href="/payment.php?id=1" class="btn purchase-1">Purchase Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card mb-5 mb-lg-0">
+                            <div class="card-body">
+                                <h5 class="card-title text-muted text-uppercase text-center">Daddy</h5>
+                                <h6 class="card-price text-center"><strike>$199.99</strike></h6>
+                                <h6 class="card-price text-center">$149.99</h6>
+                                <hr>
+                                <ul class="fa-ul">
+                                    <li><span class="fa-li"><i class="fa fa-check"></i></span><strong>Premium</strong> Snapchat content 🔞</li>
+                                    <li><span class="fa-li"><i class="fa fa-check"></i></span><strong>Meetup</strong> if you're close (ask me on Snap) 🔞</li>
+                                    <li><span class="fa-li"><i class="fa fa-check"></i></span><strong>Daily</strong> new stories</li>
+                                    <li><span class="fa-li"><i class="fa fa-check"></i></span><strong>My personal</strong> phone number</li>
+                                    <li><span class="fa-li"><i class="fa fa-check"></i></span><strong>Live Sexting</strong> daily</li>
+                                    <li><span class="fa-li"><i class="fa fa-check"></i></span>Private shows <strong>just for you</strong></li>
+                                    <li><span class="fa-li"><i class="fa fa-check"></i></span>You're my <strong>priority</strong></li>
+                                </ul>
+                                <hr>
+                                <div class="text-center">
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <a href="/payment.php?id=2" class="btn purchase-2">Purchase Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="gallery" class="wow fadeInUp">
+            <a href="#gallery" class="scrollto">
+                <div id=Gallery></div>
+            </a>
+            <div class="container">
+                <div class="section-header">
+                    <h2>📸 Gallery 📸</h2>
+                </div>
+            </div>
+            <div class="owl-carousel gallery-carousel">
+                <a href="img/gallery/1.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/1.jpg" alt=""></a>
+                <a href="img/gallery/2.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/2.jpg" alt=""></a>
+                <a href="img/gallery/3.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/3.jpg" alt=""></a>
+            </div>
+        </section>
+        <section id="reviews" class="wow fadeInUp">
+            <a href="#gallery" class="scrollto">
+                <div id=Reviews></div>
+            </a>
+            <div class="container">
+                <div class="section-header">
+                    <h2>✔️ Reviews ✔️</h2>
+                </div>
+            </div>
+            <div class="owl-carousel gallery-carousel">
+                <a href="img/reviews/review1.png" class="venobox" data-gall="gallery-carousel"><img src="img/reviews/review1.png" alt=""></a>
+                <a href="img/reviews/review3.png" class="venobox" data-gall="gallery-carousel"><img src="img/reviews/review3.png" alt=""></a>
+                <a href="img/reviews/review4.png" class="venobox" data-gall="gallery-carousel"><img src="img/reviews/review4.png" alt=""></a>
+                <a href="img/reviews/review5.png" class="venobox" data-gall="gallery-carousel"><img src="img/reviews/review5.png" alt=""></a>
+                <a href="img/reviews/review7.png" class="venobox" data-gall="gallery-carousel"><img src="img/reviews/review7.png" alt=""></a>
+            </div>
+        </section>
+        <section id="faq" class="wow fadeInUp">
+            <div class="container">
+                <div class="section-header">
+                    <h2>F.A.Q </h2>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <ul id="faq-list">
+                            <li>
+                                <a data-toggle="collapse" class="collapsed" href="#faq1">How do I know you won't scam me? <i class="fa fa-minus-circle"></i></a>
+                                <div id="faq1" class="collapse" data-parent="#faq-list">
+                                    <p>I'm verified on OnlyFans and post daily <strong>live</strong> videos on my Snapchat.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a data-toggle="collapse" class="collapsed" href="#faq2">How often do you post?<i class="fa fa-minus-circle"></i></a>
+                                <div id="faq2" class="collapse" data-parent="#faq-list"><p>Daily.</p></div>
+                            </li>
+                            <li>
+                                <a data-toggle="collapse" class="collapsed" href="#faq3">How do I get added to your premium?<i class="fa fa-minus-circle"></i></a>
+                                <div id="faq3" class="collapse" data-parent="#faq-list">
+                                    <p>Just enter your username while purchasing! If I didn't add you in 24h, just send me a screenshot of your payment on Snap!</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a data-toggle="collapse" class="collapsed" href="#faq4">How do I go about upgrading?<i class="fa fa-minus-circle"></i></a>
+                                <div id="faq4" class="collapse" data-parent="#faq-list"><p>You can upgrade for up to 2 weeks after your initial purchase. You will of course only pay the difference of the price!</p></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="container">
+            <div class="copyright">&copy; Copyright &mdash; jessicapremium.com &mdash; all rights reserved</div>
+        </div>
+    </footer>
+    <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+    <script src="js/rob.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.8.6/venobox.min.js"></script>
 </body>
 </html>
