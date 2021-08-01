@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <h1>Emma's landing page</h1>
+    <a href="https://www.w3schools.com">This is a link</a>
+    <h2>size 2</h2>
+    <p>This is another paragraph.</p>
+    <h3>size 3</h3>
+    <p>This is the start of auto payments...</p>
+    <img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+
+
+</head>
+<body>
+
+</body>
+</html>
